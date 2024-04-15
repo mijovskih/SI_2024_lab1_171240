@@ -1,0 +1,272 @@
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240
+$ git init
+Initialized empty Git repository in C:/Users/Hristijan/Desktop/SI_2024_lab1_171240/.git/
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git remote add origin https://github.com/mijovskih/SI_2024_lab1_171240.git
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git add .
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) b63a0ab] Initial commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 171240.txt
+ create mode 100644 README.md
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git push --set-upstream origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 290 bytes | 290.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mijovskih/SI_2024_lab1_171240.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git add .
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touche
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git commit -m "Add started code"
+[master e73c294] Add started code
+ 4 files changed, 50 insertions(+)
+ create mode 100644 SILab1Main.java
+ create mode 100644 SILab1_1.java
+ create mode 100644 SILab1_2.java
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.10 KiB | 1.10 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mijovskih/SI_2024_lab1_171240.git
+   b63a0ab..e73c294  master -> master
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git branch bug1
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git branch bug2
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git branches
+git: 'branches' is not a git command. See 'git --help'.
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git branch
+  bug1
+  bug2
+* master
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug1)
+$ git commit -m "Fix wrong condition in filterOddLengthStrings"
+On branch bug1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1_1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug1)
+$ git add .
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches
+it
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug1)
+$ git commit -m "Fix wrong condition in filterOddLengthStrings"
+[bug1 f7db2c0] Fix wrong condition in filterOddLengthStrings
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2)
+$ git add .
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches
+it
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2)
+$ git commit -m "Fix wrong condition in makeBigStringForm"
+[bug2 bf1d029] Fix wrong condition in makeBigStringForm
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug1)
+$ git add .
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touche
+s it
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug1)
+$ git commit -m "Call method makeBigStringForm in main class"
+[bug1 2c8d983] Call method makeBigStringForm in main class
+ 1 file changed, 1 insertion(+)
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug1)
+$ git push --all
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 992 bytes | 992.00 KiB/s, done.
+Total 9 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 4 local objects.
+To https://github.com/mijovskih/SI_2024_lab1_171240.git
+ * [new branch]      bug1 -> bug1
+ * [new branch]      bug2 -> bug2
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+M       171240.txt
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2)
+$ git add .
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2)
+$ git commit -m "Call method makeBigStringFrom"
+[bug2 69ec619] Call method makeBigStringFrom
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2)
+$ git push --all
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 790 bytes | 790.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/mijovskih/SI_2024_lab1_171240.git
+   bf1d029..69ec619  bug2 -> bug2
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git merge bug1
+Updating e73c294..2c8d983
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git push --all
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mijovskih/SI_2024_lab1_171240.git
+   e73c294..2c8d983  master -> master
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2)
+$ git rebase master
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+error: could not apply 69ec619... Call method makeBigStringFrom
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 69ec619... Call method makeBigStringFrom
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2|REBASE 2/2)
+$ git status
+interactive rebase in progress; onto 2c8d983
+Last commands done (2 commands done):
+   pick bf1d029 Fix wrong condition in makeBigStringForm
+   pick 69ec619 Call method makeBigStringFrom
+No commands remaining.
+You are currently rebasing branch 'bug2' on '2c8d983'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   171240.txt
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   SILab1Main.java
+
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2|REBASE 2/2)
+$ git rebase --continue
+SILab1Main.java: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2|REBASE 2/2)
+$ git add .
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2|REBASE 2/2)
+$ git commit -m "Resolve conflicts"
+[detached HEAD a005f19] Resolve conflicts
+ 2 files changed, 14 insertions(+), 1 deletion(-)
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2|REBASE 2/2)
+$ git rebase --continue
+Successfully rebased and updated refs/heads/bug2.
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (master)
+$ git merge bug2
+Updating 2c8d983..a005f19
+Fast-forward
+ 171240.txt      | 14 +++++++++++++-
+ SILab1Main.java |  1 +
+ SILab1_2.java   |  2 +-
+ 3 files changed, 15 insertions(+), 2 deletions(-)
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2)
+$ git push --all
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 225 bytes | 225.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mijovskih/SI_2024_lab1_171240.git
+   69ec619..3b0a93d  bug2 -> bug2
+
+Hristijan@DESKTOP-558BRR4 MINGW64 ~/Desktop/SI_2024_lab1_171240 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.

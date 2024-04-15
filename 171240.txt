@@ -12,4 +12,19 @@
 15. git add . -> git commit -m "Call method filterOddLengthStrings in main class"
 16. git checkout bug 2
 17. git add . -> git commit -m "Call method makeBigStringFrom"
-16. git push --all
+18. git push --all
+19. git checkout master
+20. git merge bug1
+21. git push --all
+22. git checkout bug2
+23. git rebase master (CONFLICTS)
+	-git status (за да се види кои датотеки се во конфликт)
+	-Manually resolve conflicts via editor
+	-git add . -> git commit -m "Resolve conflicts"
+	-git rebase --continue
+24. git checkout master
+25. git merge bug2
+26. git push --all
+27. /
+28. git add . -> git commit -m "Added logs.txt"
+29. git push --all
