@@ -1,0 +1,3 @@
+4. git init
+5. git remote add origin https://github.com/mijovskih/SI_2024_lab1_171240.git
+6. git add . -> git commit -m "Initial commit" -> git push --set-upstream origin masters
